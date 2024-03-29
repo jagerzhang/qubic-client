@@ -4,5 +4,4 @@ docker run \
     --cpus 2 \
     --net host \
     -e THREADS=2 \
-    -e ALIAS=NEW-NODE \
     jagerzhang/qubic-client

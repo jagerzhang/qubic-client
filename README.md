@@ -12,7 +12,6 @@ docker run \
     --cpus 2 \   # 指定CPU个数，支持小数
     --net host \
     -e THREADS=2 \
-    -e ALIAS=NEW-NODE \
     -e TOKEN=eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjliNGRhMjE4LTMxMTctNGZiZC1hMTA3LWU1NDdiM2FiYTM5MCIsIk1pbmluZyI6IiIsIm5iZiI6MTcwOTA5NjYwMCwiZXhwIjoxNzQwNjMyNjAwLCJpYXQiOjE3MDkwOTY2MDAsImlzcyI6Imh0dHBzOi8vcXViaWMubGkvIiwiYXVkIjoiaHR0cHM6Ly9xdWJpYy5saS8ifQ.kxhLFKwDHDsyQhVt2GChj1ROzupM7QcFdT0LbX14XmDp09RvpN54T4sGRF7dvHf7bZOagc_nEMR6wkN3SofOUQ \
     jagerzhang/qubic-client
 ```
