@@ -2,6 +2,11 @@
 qubic-client Docker 版本，因为挖这个需要运气，因此用Docker来启动可以快速将服务器资源分割成多个节点来挖，挖到的概率可能有所提升。还有一种场景，就是有的云服务器只允许你用 90% 的CPU，这就很尴尬，物理运行会损失CPU性能，用Docker则可以任意指定CPU资源，还支持小数！
 # 快速启动
 ```
+# 调整分页，否则会提示 Trainer: WARNING: Free number of hugepages is smaller than needed, have: 0 - want: 104 (52 x number of threads). Falling back to use malloc memory.
+# 分页大小计算公式为：总挖矿线程数 x 52
+sysctl -w vm.nr_hugepages=1024
+
+# 启动容器
 docker run \
     -dti \
     --cpus 2 \   # 指定CPU个数，支持小数
